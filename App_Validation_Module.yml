@@ -1,3 +1,4 @@
+---
 - name: App Validation Module
   hosts: all
   tasks:
@@ -7,8 +8,8 @@
 
     - name: Python to SQL connection
       debug:
-      ansible.builtin.command:
-      cmd: python --version
         msg: "Connected successfully"
 
-
+    - name: Run a command on remote host
+      ansible.builtin.command:
+        cmd: "python --version"
