@@ -10,4 +10,4 @@
         msg: "Connected successfully"
 
     - name: Run Python script on remote host
-      ansible.builtin.command: python --version
+      cmd: python --version
