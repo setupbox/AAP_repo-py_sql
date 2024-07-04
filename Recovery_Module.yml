@@ -1,0 +1,6 @@
+- name: Recovery Module
+  hosts: all
+  tasks:
+    - name: Executing Recovery Module
+      debug:
+        msg: "Recovery Module Completed"

@@ -1,0 +1,10 @@
+- name: Network Isolation Module
+  hosts: all
+  tasks:
+    - name: Executing Network Isolation Module
+      debug:
+        msg: "Network Isolation Module Completed"
+
+    - name: Executing Python Script
+      cmd: python3 hello_world.py
+

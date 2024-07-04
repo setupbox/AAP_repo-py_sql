@@ -1,0 +1,6 @@
+- name: Security Scanning Module
+  hosts: all
+  tasks:
+    - name: Executing Security Scanning Module
+      debug:
+        msg: "Security Scanning Module Completed"

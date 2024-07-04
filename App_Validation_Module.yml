@@ -1,0 +1,6 @@
+- name: App Validation Module
+  hosts: all
+  tasks:
+    - name: Executing App Validation Module
+      debug:
+        msg: "App Validation Module Completed"

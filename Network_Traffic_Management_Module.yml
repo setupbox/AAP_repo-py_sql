@@ -1,0 +1,6 @@
+- name: Network Traffic Management Module
+  hosts: all
+  tasks:
+    - name: Executing Network Traffic Management Module
+      debug:
+        msg: "Network Traffic Management Module Completed"

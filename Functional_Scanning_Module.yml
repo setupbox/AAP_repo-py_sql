@@ -1,0 +1,6 @@
+- name: Functional Scanning Module
+  hosts: all
+  tasks:
+    - name: Executing Functional Scanning Module
+      debug:
+        msg: "Functional Scanning Module Completed"

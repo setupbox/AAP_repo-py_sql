@@ -1,0 +1,6 @@
+- name: Patch Management Module
+  hosts: all
+  tasks:
+    - name: Executing Patch Management Module
+      debug:
+        msg: "Patch Management Module Completed"
