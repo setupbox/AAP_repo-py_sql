@@ -1,4 +1,3 @@
----
 - name: App Validation Module
   hosts: all
   tasks:
@@ -9,7 +8,11 @@
     - name: Python to SQL connection
       debug:
         msg: "Connected successfully"
+    
+    - name: Execute the Python script with the YAML file
+      command: python --version
+      register: script_output
 
-    - name: Run a command on remote host
-      ansible.builtin.command:
-        cmd: "python --version"
+    - name: Print the script output
+      debug:
+        var: script_output.stdout
