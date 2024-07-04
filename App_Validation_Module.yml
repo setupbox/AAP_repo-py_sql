@@ -1,16 +1,14 @@
-- name: App Validation Module
-  hosts: all
+- name: Run Python script from GitHub
+  hosts: localhost
   tasks:
-    - name: Executing App Validation Module
-      debug:
-        msg: "App Validation Module Completed"
+    - name: Clone the repository containing the Python script
+      git:
+        repo: 'https://github.com/setupbox/AAP_repo-py_sql.git'
+        dest: /tmp/
+        version: main
 
-    - name: Python to SQL connection
-      debug:
-        msg: "Connected successfully"
-    
     - name: Execute the Python script with the YAML file
-      command: sudo python3 /var/lib/awx/projects/py_mysql/py_sql.py
+      command: python3 /tmp/AAP_repo-py_sql/py_sql.py
       register: script_output
 
     - name: Print the script output
