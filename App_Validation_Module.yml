@@ -1,13 +1,1 @@
-- name: App Validation Module
-  hosts: all
-  tasks:
-    - name: Executing App Validation Module
-      debug:
-        msg: "App Validation Module Completed"
 
-    - name: Python to SQL connection
-      debug:
-        msg: "Connected successfully"
-
-    - name: Run Python script on remote host
-      cmd: python --version
