@@ -5,13 +5,9 @@
       debug:
         msg: "App Validation Module Completed"
 
-    - name: Execute Python script
-      ansible.builtin.script:
-        script: |
-          #!/usr/bin/env python3
-          print ("Hello World!")
-    
-        # Indicate the interpreter to use for the script
-        interpreter: /usr/bin/env python3
+    - name: Python to SQL connection
+      debug:
+        msg: "Connected successfully"
 
-      msg: "Connected successfully"
+    - name: Run Python script on remote host
+      ansible.builtin.command: python --version
