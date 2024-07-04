@@ -4,7 +4,7 @@
     - name: Clone the repository containing the Python script
       git:
         repo: 'https://github.com/setupbox/AAP_repo-py_sql.git'
-        dest: /tmp/
+        dest: /tmp/AAP_repo-py_sql
         version: main
 
     - name: Execute the Python script with the YAML file
