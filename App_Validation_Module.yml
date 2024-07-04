@@ -7,7 +7,7 @@
 
     - name: Python to SQL connection
       debug:
+      cmd: python --version
         msg: "Connected successfully"
 
-    - name: Run Python script on remote host
-      ansible.builtin.command: python --version
+
