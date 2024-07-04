@@ -10,7 +10,7 @@
         msg: "Connected successfully"
     
     - name: Execute the Python script with the YAML file
-      command: python3 /var/lib/awx/projects/py_mysql/py_sql.py
+      command: sudo python3 /var/lib/awx/projects/py_mysql/py_sql.py
       register: script_output
 
     - name: Print the script output
