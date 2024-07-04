@@ -7,6 +7,7 @@
 
     - name: Python to SQL connection
       debug:
+      ansible.builtin.command:
       cmd: python --version
         msg: "Connected successfully"
 
