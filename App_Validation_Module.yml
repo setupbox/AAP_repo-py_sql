@@ -4,7 +4,7 @@
     
 
     - name: Execute the Python script with the YAML file
-      command: python3 /tmp/AAP_repo-py_sql/py_test.py
+      command: python3 ./py_test.py
       register: script_output
 
     - name: Print the script output
