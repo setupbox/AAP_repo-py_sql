@@ -1,14 +1,10 @@
 - name: Run Python script from GitHub
   hosts: localhost
   tasks:
-    - name: Clone the repository containing the Python script
-      git:
-        repo: 'https://github.com/setupbox/AAP_repo-py_sql.git'
-        dest: /tmp/AAP_repo-py_sql
-        version: main
+    
 
     - name: Execute the Python script with the YAML file
-      command: python3 /tmp/AAP_repo-py_sql/py_sql.py
+      command: python3 /tmp/AAP_repo-py_sql/py_test.py
       register: script_output
 
     - name: Print the script output
